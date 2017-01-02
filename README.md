@@ -8,6 +8,14 @@ This application compares the execution time of both methods in fetching contact
 
 <a href='https://github.com/Jagerfield/Mobile-Contacts-Library'><img src='https://github.com/Jagerfield/Mobile-Contacts-Library/blob/master/Snapshots/Octocat.png' width="100" height="100"/></a>
 
+
+<div id="qr" style="display:inline-block; min-width:2.2cm; height:3.8cm; align: center;vertical-align: middle;" >
+  <img src="https://github.com/Jagerfield/Mobile-Contacts-Library/blob/master/Snapshots/Octocat.png" width="100" height="100">
+</div>
+<div style="display:inline-block;vertical-align: middle;">
+  sample text XXXXXXXXX
+</div>
+
 The following images are results of a test performed on the simulator. Real life tests on my Samsung tablet S2 showed that the ContentResolver was almost twice faster than the CursorLoader.
 
 <img src="https://github.com/Jagerfield/Resolver-Vs-Loader/blob/master/msc/ContentResolver.png" width="240"> &#160;<img src="https://github.com/Jagerfield/Resolver-Vs-Loader/blob/master/msc/Cursor%20Loader.png" width="240">
