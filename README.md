@@ -10,6 +10,10 @@ The following images are results of a test performed on the simulator. Real life
 
 <img src="https://github.com/Jagerfield/Resolver-Vs-Loader/blob/master/msc/ContentResolver.png" width="240"> &#160;<img src="https://github.com/Jagerfield/Resolver-Vs-Loader/blob/master/msc/Cursor%20Loader.png" width="240">
 
+The demo app for this library is available on Google Play:
+
+<a href='https://play.google.com/store/apps/details?id=jagerfield.ContentResolverVsCursorLoader'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' width="150" height="60"/></a>
+
 ## Installation
 
 In the app manifest file add this permission: 
