@@ -12,6 +12,12 @@ The following images are results of a test performed on the simulator. Real life
 
 ## Installation
 
+In the app manifest file add this permission: 
+
+  ```
+  <uses-permission android:name="android.permission.READ_CONTACTS" />
+  ``` 
+  
 In the app build.gradle add the following:
 
   a. Add JitPack repository at the end of repositories 
