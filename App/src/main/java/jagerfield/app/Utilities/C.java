@@ -1,0 +1,67 @@
+package jagerfield.app.Utilities;
+
+import android.graphics.Bitmap;
+import android.support.v7.graphics.Palette;
+
+
+public class C
+{
+    public static final String CONTACT = "CONTACT";
+    public static final String TAG_LIB = "TAG_LIB";
+    public static final String REQUIRED_PERMISSION = "android.permission.READ_CONTACTS";
+
+    public static final int LIGHT_VIBRANT= 1;
+    public static final int VIBRANT= 2;
+    public static final int DARK_VIBRANT= 3;
+    public static final int LIGHT_MUTED= 4;
+    public static final int MUTED= 5;
+    public static final int DARK_MUTED= 6;
+    public static final String CURSOR_TYPE = "CURSOR_TYPE";
+    public static final String CURSOR_CONTENT_RESOLVER = "Cursor Content Resolver";
+    public static final String CURSOR_LOADER = "Cursor Loader";
+
+
+    // Return a palette's vibrant swatch after checking that it exists
+    public static Palette.Swatch getImageColor(int colorType, Bitmap bitmap)
+    {
+        Palette p = Palette.from(bitmap).generate();
+
+        if (p==null)
+        {
+            return null;
+        }
+
+        Palette.Swatch vibrant = null;
+
+        switch(colorType)
+        {
+            case LIGHT_VIBRANT:
+                vibrant = p.getLightVibrantSwatch();
+                break;
+
+            case VIBRANT:
+                vibrant = p.getVibrantSwatch();
+                break;
+
+            case DARK_VIBRANT:
+                vibrant = p.getDarkVibrantSwatch();
+                break;
+
+            case LIGHT_MUTED:
+                vibrant = p.getLightMutedSwatch();
+                break;
+
+            case MUTED:
+                vibrant = p.getMutedSwatch();
+                break;
+
+            case DARK_MUTED:
+                vibrant = p.getDarkMutedSwatch();
+                break;
+
+        }
+
+        return vibrant;
+    }
+
+}
