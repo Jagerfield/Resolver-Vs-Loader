@@ -1,4 +1,4 @@
-## Application Purpose and Description
+## ContentResolver Vs CursorLoader Speed Test
 
 While developing my app [DCM](https://play.google.com/store/apps/details?id=jagerfield.dcm) I used both the ContentResolver and the CursorLoader to fetch contacts from the mobile. The ContentResolver is a class that provides applications access to the content model. The CursorLoader is a loader object that queries a ContentResolver for data. In my trials I noticed that the ContentResolver is much faster. 
 
@@ -8,7 +8,7 @@ https://github.com/Jagerfield/Android-get-phone-book-contact-library
 
 The following images are results of a test performed on the simulator. Real life tests on my Samsung tablet S2 showed that the ContentResolver was almost twice faster than the CursorLoader.
 
-<img src="https://github.com/Jagerfield/Content-Resolver-Vs-Cursor-Loader-Speed-Test/blob/master/msc/Content%20Resolver.png" width="240">
+<img src="https://github.com/Jagerfield/Content-Resolver-Vs-Cursor-Loader-Speed-Test/blob/master/msc/Content%20Resolver.png" idth="240">
 
 
 <img src="https://github.com/Jagerfield/Content-Resolver-Vs-Cursor-Loader-Speed-Test/blob/master/msc/Cursor%20Loader.png" width="240">
@@ -31,7 +31,7 @@ In the app build.gradle add the following:
   ```java
   dependencies 
   {
-	   compile 'com.github.Jagerfield:Content-Resolver-Vs-Cursor-Loader-Speed-Test:v1.0'
+	   compile 'com.github.Jagerfield:Resolver-Vs-Loader:v1.2'
   }
   
   ```
