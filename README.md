@@ -1,4 +1,21 @@
+
+
 ## ContentResolver Vs CursorLoader Speed Test
+
+columns: [
+    {
+       
+                <img src="https://github.com/Jagerfield/Resolver-Vs-Loader/blob/master/msc/launcher_org.png" width="50"> &#160; 
+           
+
+    },
+    {
+        alignment: 'center',
+        ## ContentResolver Vs CursorLoader Speed Test
+    }
+]
+
+<div style = "vertical-align: middle;"><img src="https://github.com/Jagerfield/Resolver-Vs-Loader/blob/master/msc/launcher_org.png" width="50"> &#160; <b>ContentResolver Vs CursorLoader Speed Test</b></div>
 
 While developing my app [DCM](https://play.google.com/store/apps/details?id=jagerfield.dcm) I used both the ContentResolver and the CursorLoader to fetch contacts from the mobile. The ContentResolver is a class that provides applications access to the content model. The CursorLoader is a loader object that queries a ContentResolver for data. In my trials I noticed that the ContentResolver is much faster. 
 
