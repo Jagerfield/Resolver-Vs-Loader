@@ -6,17 +6,7 @@ While developing my app [DCM](https://play.google.com/store/apps/details?id=jage
 
 This application compares the execution time of both methods in fetching contacts. The library is modified and extended from my **Mobile-Contacts-Library** which solely used the ContentResolver to fetch contacts:
 
-<div>
-<div id="qr" style="display:inline-block; min-width:100; height:100; align: center;vertical-align: middle;" >
-  dfsdfdfdfsfsdfsdfsdsd
-</div>
-<div style="display:inline-block;vertical-align: middle;">
-  Mobile-Contacts-Library
-</div>
-
-</div>
-
-
+<a href='https://github.com/Jagerfield/Mobile-Contacts-Library'><img src='https://github.com/Jagerfield/Mobile-Contacts-Library/blob/master/Snapshots/Octocat.png' width="100" height="100"/></a>
 
 The following images are results of a test performed on the simulator. Real life tests on my Samsung tablet S2 showed that the ContentResolver was almost twice faster than the CursorLoader.
 
