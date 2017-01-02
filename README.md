@@ -4,9 +4,16 @@
 
 While developing my app [DCM](https://play.google.com/store/apps/details?id=jagerfield.dcm) I used both the ContentResolver and the CursorLoader to fetch contacts from the mobile. The ContentResolver is a class that provides applications access to the content model. The CursorLoader is a loader object that queries a ContentResolver for data. In my trials I noticed that the ContentResolver is much faster. 
 
-This application compares the execution time of both methods in fetching contacts. The ContactsLib modle in this application is modified and extended from my ContactImportLib which solely used the ContentResolver to fetch contacts:
+This application compares the execution time of both methods in fetching contacts. The library is modified and extended from my **Mobile-Contacts-Library** which solely used the ContentResolver to fetch contacts:
 
-https://github.com/Jagerfield/Android-get-phone-book-contact-library
+<div id="qr" style="display:inline-block; min-width:100; height:100; align: center;vertical-align: middle;" >
+  <a href='https://github.com/Jagerfield/Mobile-Contacts-Library'><img src='https://github.com/Jagerfield/Mobile-Contacts-Library/blob/master/Snapshots/Octocat.png' width="100" height="100"/></a>
+</div>
+<div style="display:inline-block;vertical-align: middle;">
+  Mobile-Contacts-Library
+</div>
+
+
 
 The following images are results of a test performed on the simulator. Real life tests on my Samsung tablet S2 showed that the ContentResolver was almost twice faster than the CursorLoader.
 
