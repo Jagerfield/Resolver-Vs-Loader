@@ -38,7 +38,7 @@ In the app build.gradle add the following:
   ```java
   dependencies 
   {
-	   compile 'com.github.Jagerfield:Resolver-Vs-Loader:v1.2'
+	   compile 'com.github.Jagerfield:Resolver-Vs-Loader:v1.3'
   }
   
   ```
