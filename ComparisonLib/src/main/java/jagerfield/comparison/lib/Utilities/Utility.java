@@ -1,12 +1,18 @@
 package jagerfield.comparison.lib.Utilities;
 
+import android.app.Activity;
+import android.content.pm.PackageManager;
 import android.database.Cursor;
+import android.os.Build;
 import android.provider.ContactsContract;
+import android.util.Log;
 
 import jagerfield.comparison.lib.Abstracts.ElementParent;
 
 public class Utility
 {
+    public static final String TAG_LIB = "TAG_LIB";
+
     public static String getColumnIndex(Cursor c, String column)
     {
         String result = "";
@@ -216,5 +222,36 @@ public class Utility
         }
 
         return result;
+    }
+
+    public synchronized static boolean hasPermission(Activity activity, String permission)
+    {
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.M)
+        {
+            return true;
+        }
+
+        if (permission==null || permission.isEmpty())
+        {
+
+            return false;
+        }
+
+        String[] permissionsArray = {permission};
+
+        for (int i = 0; i < permissionsArray.length; i++)
+        {
+            if (activity.checkSelfPermission(permissionsArray[i]) == PackageManager.PERMISSION_DENIED)
+            {
+                Log.w(TAG_LIB, permission + " permission is missing.");
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+
+        return false;
     }
 }

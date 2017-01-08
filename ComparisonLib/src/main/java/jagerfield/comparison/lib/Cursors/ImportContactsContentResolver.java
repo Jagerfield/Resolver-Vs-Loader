@@ -3,9 +3,7 @@ package jagerfield.comparison.lib.Cursors;
 import android.app.Activity;
 import android.database.Cursor;
 import android.provider.ContactsContract;
-
 import jagerfield.comparison.lib.Contact.Contact;
-
 import java.util.ArrayList;
 
 
